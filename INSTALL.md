@@ -10,7 +10,7 @@ the application, extract it to the folder you would like to keep it in.
 SLA - HealthCheck requires
 - PHP 5.3.23 or later.
 - Zend Framework 2.3 or later.
-- New Relic 4.11.1 PHP Agent
+- New Relic PHP Agent 4.11.1 or later.
 
 ## DEVELOPMENT VERSIONS
 

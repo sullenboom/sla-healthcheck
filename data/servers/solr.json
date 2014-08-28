@@ -1,0 +1,18 @@
+{
+    "name": "solar",
+    "type": "java",
+    "version": "1.0",
+    "hosts": [ "dach-tomcat1", "dach-tomcat2", "dach-tomcat3", "dach-tomcat4", "dach-tomcat5", "dach-tomcat6" ],
+
+    "domains": {
+        "solr-master": {
+            "url": "solr-master.tomcat.prod.tos.hc.lan"
+        },
+        "solr-slave": {
+            "url": "solr-slave.tomcat.prod.tos.hc.lan"
+        },
+        "solr-core": {
+            "url": "solr-core.tomcat.prod.tos.hc.lan"
+        }
+    }
+}

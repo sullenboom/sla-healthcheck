@@ -1,0 +1,17 @@
+<?php if (isset($this->sites)): ?>
+    <ul class="status">
+        <?php if (0 < count ($this->sites)): ?>
+            <?php echo $this->PartialLoop('list/service', $this->sites); ?>
+        <?php endif; ?>
+    </ul>
+<?php endif; ?>
+
+<?php if (isset($this->domainss)): ?>
+    <ul class="status">
+        <?php if (0 < count ($this->domains)): ?>
+            <?php foreach ($this->domains as $domain): ?>
+                <?php echo $domain ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </ul>
+<?php endif; ?>

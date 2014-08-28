@@ -1,0 +1,21 @@
+{
+    "name": "contentfunnel",
+    "type": "business",
+    "version": "1.0",
+
+    "sites": [
+        "http://www.holidaycheck.de/reise-Angebote-Fruehbucher-ch_ra.html",
+        "http://www.holidaycheck.de/reise-Angebote-Pauschalreisen-ch_ra.html",
+        "http://www.holidaycheck.de/reise-Angebote-Lastminute-ch_ra.html",
+        "http://www.holidaycheck.de/staedtereisen",
+        "http://www.holidaycheck.de/destination-Reiseinformationen_Aegaeis-did_89.html",
+        "http://www.holidaycheck.de/region-Reiseinformationen_Teneriffa-rid_134.html",
+        "http://www.holidaycheck.de/ort-Reiseinformationen_Wien-oid_7567.html",
+        "http://www.holidaycheck.de/hotel-Reiseangebote-Hotelangebot+Hotel+Dana+Beach+Resort-ch_ra-hid_70434.html#detailView",
+        "http://www.holidaycheck.de/hotel-Reiseangebote-Pauschalreisen+Hotel+Dana+Beach+Resort-ch_ra-hid_70434.html#detailView"
+    ],
+    "domains": {
+        "content": [ "HotelService" ],
+        "ecomprice": [ "HotelService", "PackageService" ]
+    }
+}

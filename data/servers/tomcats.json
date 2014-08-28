@@ -1,0 +1,101 @@
+{
+    "name": "domains",
+    "type": "java",
+    "version": "1.0",
+    "hosts": [ "dach-tomcat1", "dach-tomcat2", "dach-tomcat3", "dach-tomcat4", "dach-tomcat5", "dach-tomcat6" ],
+
+    "domains": {
+        "api": {
+			"url": "api.tomcat.prod.tos.hc.lan",
+			"port": 8880,
+            "version": "v2"
+        },
+        "b2b": {
+			"url": "b2b.tomcat.prod.tos.hc.lan",
+			"port": 10080,
+			"version": "v1"
+		},
+        "basedata": {
+			"url": "basedata.tomcat.prod.tos.hc.lan",
+			"port": 10780,
+			"version": "v2"
+		},
+        "content": {
+			"url": "content.tomcat.prod.tos.hc.lan",
+			"port": 9080,
+			"version": "v5"
+		},
+        "ecomprice": {
+			"url": "ecomprice.tomcat.prod.tos.hc.lan",
+			"port": 9380,
+			"version": "v1"
+		},
+        "ecombooking": {
+			"url": "ecombooking.tomcat.prod.tos.hc.lan",
+			"port": 9480,
+			"version": "v1"
+		},
+        "ecombooking-checkin": {
+			"url": "ecombooking-checkin.tomcat.prod.tos.hc.lan",
+			"port": 9680,
+			"version": "v1"
+		},
+        "ecomfacade": {
+			"url": "ecomfacade.tomcat.prod.tos.hc.lan",
+			"port": 9580,
+			"version": "v1"
+		},
+        "ecommerce": {
+			"url": "ecommerce.tomcat.prod.tos.hc.lan",
+			"port": 9280,
+			"version": "v2"
+		},
+        "ecomtouroperator": {
+			"url": "ecomtouroperator.tomcat.prod.tos.hc.lan",
+			"port": 8280,
+			"version": "v1"
+		},
+        "communicationcenter": {
+			"url": "communicationcenter.tomcat.prod.tos.hc.lan",
+			"port": 8680
+		},
+        "community": {
+			"url": "community.tomcat.prod.tos.hc.lan",
+			"port": 9180,
+			"version": "v1"
+		},
+        "fluidregionsservice": {
+			"url": "fluidregionsservice.tomcat.prod.tos.hc.lan",
+			"port": 11080,
+			"version": "v1"
+		},
+        "ksi": {
+			"url": "ksi.tomcat.prod.tos.hc.lan",
+			"port": 10680,
+			"version": "v1"
+		},
+        "marketing": {
+			"url": "marketing.tomcat.prod.tos.hc.lan",
+			"port": 10880,
+			"version": "v2"
+		},
+        "mwc": {
+			"url": "mwc.tomcat.prod.tos.hc.lan",
+			"port": 11180,
+			"version": "v2"
+		},
+        "pixray": {
+			"url": "pixray.tomcat.prod.tos.hc.lan",
+			"port": 9980,
+			"version": "v2"
+		},
+        "search": {
+			"url": "search.tomcat.prod.tos.hc.lan",
+			"port": 10180,
+			"version": "v1"
+		},
+        "spatial-service": {
+            "url": "spatial-service.tomcat.prod.tos.hc.lan"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<?php
+$name = $this->service->getName();
+$type = $this->service->getType();
+$version = $this->service->getVersion();
+$appName = $this->service->getAppName();
+
+$links = array();
+foreach (array('html', 'json', 'xml') as $format) {
+    $links[$format] = array(
+        'title'=> $format,
+        'run'=> ($format == 'html' ? 'false' : 'true'),
+        'class' => ($this->format == $format ? 'active' : ''),
+        'url'=> $this->url('healthcheck/service', array('service' => $name, 'format' => $format)),
+    );
+}
+$i = 0;
+?>
+<div class="jumbotron">
+    <span class="right"><a href="?run=true" class="start">start</a></span>
+    <h1><?php echo sprintf($this->translate('Service: %s'), $name) ?></h1>
+    <p class="small">
+        <?php echo sprintf($this->translate('Application: %s | Version: %s | Type: %s'), $appName, $version, $type) ?>
+    </p>
+    <?php echo $this->content; ?>
+    <p>
+        <?php foreach ($links as $link): $i++ ?>
+            <a href="<?php echo $link['url']; ?>?run=<?php echo $link['run']; ?>" class="<?php echo $link['class']; ?>">
+                <?php echo $link['title']; ?>
+            </a>
+            <?php if ($i < count($links)): ?> | <?php endif; ?>
+        <?php endforeach; ?>
+    </p>
+</div>

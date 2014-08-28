@@ -1,0 +1,38 @@
+<?php header('HTTP/1.1 500 Internal Server Error'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HealthCheck-Manager - Internal Server Error</title>
+    <style type="text/css">
+        <!--
+            BODY { font-family: Tahoma,Arial,sans-serif; color: black; background-color: white; }
+            H1 { color: white; background-color: #525D76; font-size: 22px; }
+            H2 { color: white; background-color: #525D76; font-size: 16px; }
+            H3 { color: white; background-color: #525D76; font-size: 14px; }
+            B { color: white; background-color: #525D76; }
+            P { background: white; color: black; font-size: 12px; }
+            A { color: black; }
+            A.name { color: black; }
+            HR { color: #525D76; }
+            PRE { font-size: 11px; }
+        -->
+    </style>
+</head>
+<body>
+    <h1>HTTP Status 500 - Internal Server Error</h1>
+    <hr size="1" noshade="noshade">
+    <p><b>type</b> Status report</p>
+    <p><b>message</b><br/>The server encountered an internal error or misconfiguration and was unable to complete your request.</p>
+    <p><b>description</b><br/>
+        <?php if (isset($e)): ?>
+            <?php echo $e->getMessage(); ?>
+        <?php endif; ?>
+    </p>
+    <?php if (getenv('APPLICATION_ENV') === 'development' && isset($e)): ?>
+    <p><b>trace</b><br/>
+        <pre><?php echo $e->getTraceAsString(); ?></pre>
+    </p>
+    <?php endif; ?>
+    <hr size="1" noshade="noshade"><h3>HealthCheck-Manager - 1.0</h3>
+</body>
+</html>

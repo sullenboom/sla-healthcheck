@@ -1,0 +1,12 @@
+{
+    "name": "externals",
+    "type": "java",
+    "version": "1.0",
+    "hosts": [ "dach-tomcat1", "dach-tomcat2", "dach-tomcat3", "dach-tomcat4", "dach-tomcat5", "dach-tomcat6" ],
+
+    "domains": {
+        "hermes": {
+			"url": "auth-s2s.prod.tos.hc.lan"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<?php
+    if (is_null($this->status)) {
+        $status = 'wait';
+    } else if ($this->status < Zend\Http\Response::STATUS_CODE_400) {
+        $status = 'success';
+    } else {
+        $status = 'failed';
+    }
+?>
+<?php if (isset($this->url)): ?>
+<li class="<?php echo $status; ?>">
+    <a href="<?php echo $this->url; ?>"><?php echo basename($this->url); ?></a>
+</li>
+<?php endif; ?>

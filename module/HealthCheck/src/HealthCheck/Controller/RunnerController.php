@@ -23,7 +23,7 @@ class RunnerController extends AbstractActionController
 {
     const HTML = 'html';
     const JSON = 'json';
-    const RICH = 'rich';
+    const RICH = 'txt';
     const XML  = 'xml';
 
     public function serviceAction()
@@ -31,6 +31,13 @@ class RunnerController extends AbstractActionController
         $serviceName = strtolower($this->params()->fromRoute('service'));
         $format = strtolower($this->params()->fromRoute('format'));
         $runChecks = $this->params()->fromQuery('run', true);
+
+        if (in_array($format, array(self::XML, self::RICH))) {
+            throw new Exception\UnexpectedValueException(sprintf(
+                'Format "%s" is currently not supported',
+                $format
+            ));
+        }
 
         try {
             $service = new Model\Service($serviceName);

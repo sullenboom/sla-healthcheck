@@ -43,7 +43,7 @@ return array(
                     'service' => array(
                         'type'    => 'Regex',
                         'options' => array(
-                            'regex' => '-(?<service>[a-zA-Z0-9_-]+)(\.(?<format>(json|html|xml)))?',
+                            'regex' => '-(?<service>[a-zA-Z0-9_-]+)(\.(?<format>(json|html|txt|xml)))?',
                             'defaults' => array(
                                 'controller' => 'HealthCheck\Controller\Runner',
                                 'action'     => 'service',

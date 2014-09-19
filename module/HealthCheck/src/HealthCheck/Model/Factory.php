@@ -16,7 +16,7 @@ class Factory
      *
      * @var array
      */
-    protected static $extensions = array('json', 'xml');
+    protected static $extensions = array('json');
 
     /**
      * @param $directoryName
